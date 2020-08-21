@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: #018ded;
+  text-align: center;
+  overflow: hidden;
+  opacity: 0.7;
+}
+
+body {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.clock {
+  border: 20px solid #fff;
+  border-radius: 50%;
+  padding: 40px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  position: relative;
+}
+
+.clock-face {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-3px);
+}
+
+.hand {
+  background: black;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  height: 6px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
